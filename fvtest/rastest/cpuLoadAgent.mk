@@ -31,6 +31,7 @@ ifeq (win,$(OMR_HOST_OS))
 	OBJECTS += $(top_srcdir)/omr.res
 endif
 MODULE_INCLUDES += ../util
+MODULE_CXXFLAGS += -O2
 EXPORT_FUNCTIONS_FILE := omragent.exportlist
 MODULE_STATIC_LIBS += testutil
 
